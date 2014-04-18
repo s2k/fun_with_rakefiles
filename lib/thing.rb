@@ -4,5 +4,6 @@ class Thing
     @part = part
   end
 
-  PART_LIST = File.readlines('partlist.txt').map(&:strip)
+  # You probably shouldn't do this anyway...
+  PART_LIST = File.readlines('./partlist.txt').map(&:strip)
 end
